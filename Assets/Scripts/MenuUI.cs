@@ -11,7 +11,7 @@ public class MenuUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,6 +26,7 @@ public class MenuUI : MonoBehaviour
     }
     public void Exit()
     {
+        DataPersistance.Instance.SaveScore();
         Application.Quit();
     }
     public void GoBack()
